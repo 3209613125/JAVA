@@ -49,7 +49,7 @@
 //    }
 //}
 //现在只能打印int类，而无法打印String类
-//问题来了，以上有两个参数，String类和int类，且返回值只能有一个，int类必然无法返回String类，反之亦然，那么我们该怎么做
+//问题来了，以上有两个参数，String类和int类，且返回值只能有一个，int类必然无法返回String类，反之亦然
 
 //foreach循环
 //class fanxing{
