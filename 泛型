@@ -95,7 +95,7 @@
          this.value2 = value2;
      }
  }
-class test   
+class test   {
     public static void main(String[] args) {
         MyClass<String,Integer> myClass1 = new MyClass<String,Integer>();
         myClass1.setValue1("小明年龄:"+"\n");
