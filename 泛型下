@@ -1,7 +1,7 @@
 //设置泛型下限此时可以修改set别的值
 //下限只能用在方法参数，可以修改内容
 //? super String，表示只能够设置String及其父类Object
-```
+```java
 class test{
     public static void main(String[] args) {
 
