@@ -81,7 +81,7 @@ class Book
         if(1<strings.length)
             price=Integer.valueOf(strings[1]);
     }
-    //输出图书信息
+    //输出 图书信息
     public void print()
     {
         System.out.println("name="+name);
