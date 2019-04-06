@@ -1,4 +1,4 @@
-//´Ëjava.classÎÄ¼şÖ»ÓÃÀ´Á·Ï°´úÂë
+//æ­¤java.classæ–‡ä»¶åªç”¨æ¥ç»ƒä¹ ä»£ç 
 //interface  Isubject{
 //
 //    void buycomputer();
@@ -6,7 +6,7 @@
 //class realsubject implements Isubject{
 //
 //    public void buycomputer(){
-//        System.out.println("ÂòÒ»Ì¨µçÄÔ£¬¸¶¿î");
+//        System.out.println("ä¹°ä¸€å°ç”µè„‘ï¼Œä»˜æ¬¾");
 //    }
 //}
 //class proxysubject implements Isubject{
@@ -16,10 +16,10 @@
 //
 //    }
 //void berforebuy(){
-//    System.out.println("È¥ÃÀ¹úmacµêÅÅ¶Ó");
+//    System.out.println("å»ç¾å›½macåº—æ’é˜Ÿ");
 //}
 //void afterbuy(){
-//    System.out.println("¿ìµİ¸ø¹Ë¿Í");
+//    System.out.println("å¿«é€’ç»™é¡¾å®¢");
 //}
 //    @Override
 //    public void buycomputer() {
@@ -38,7 +38,7 @@
 //}
 
 
-//¿§·È»ú
+//å’–å•¡æœº
 //import java .util.Scanner;
 //class Test{
 //    public static void main(String[] args) {
@@ -57,7 +57,7 @@
 //     abstract void daoshui();
 //     abstract void jiapeifang();
 //       void star(){
-//         System.out.println("½Á°è³åÅİ");
+//         System.out.println("æ…æ‹Œå†²æ³¡");
 //     }
 //    abstract void dicha();
 //}
@@ -67,33 +67,33 @@
 //    }
 //
 //    void daoshui() {
-//        System.out.println("¼ÓÈÈË®");
+//        System.out.println("åŠ çƒ­æ°´");
 //    }
 //
 //    void jiapeifang() {
-//        System.out.println("¼ÓÈë¿§·È·Û");
+//        System.out.println("åŠ å…¥å’–å•¡ç²‰");
 //    }
 //
 //    void star() {
-//        System.out.println("½Á°è³åÅİ");
+//        System.out.println("æ…æ‹Œå†²æ³¡");
 //    }
 //
 //    @Override
 //    void dicha() {
-//        System.out.println("ĞèÒª¼ÓÅ£ÄÌÂğ");
+//        System.out.println("éœ€è¦åŠ ç‰›å¥¶å—");
 //
 //        while (true) {
-//            //°ÑÊäÈë·Åµ½Ñ­»·ÄÚ²¿£¬µ±ÊäÈë·Ç·¨µÄÊ±ºò¿ÉÒÔ¸øÓÃ»§ÔÙ´ÎÊäÈëµÄ»ú»á£¬·ñÔòÒ»µ©Êä´í£¬½«Ñ­»·´òÓ¡ÎŞÏŞ´Î
+//            //æŠŠè¾“å…¥æ”¾åˆ°å¾ªç¯å†…éƒ¨ï¼Œå½“è¾“å…¥éæ³•çš„æ—¶å€™å¯ä»¥ç»™ç”¨æˆ·å†æ¬¡è¾“å…¥çš„æœºä¼šï¼Œå¦åˆ™ä¸€æ—¦è¾“é”™ï¼Œå°†å¾ªç¯æ‰“å°æ— é™æ¬¡
 //            Scanner scanner = new Scanner(System.in);
 //            String str1 = scanner.nextLine();
 //            if (str1.equalsIgnoreCase("y")) {
-//                System.out.println("¼ÓÅ£ÄÌ£¬¸ø´óÀĞµİ¿§·È");
+//                System.out.println("åŠ ç‰›å¥¶ï¼Œç»™å¤§ä½¬é€’å’–å•¡");
 //                break;
 //            } else if (str1.equalsIgnoreCase("n")) {
-//                System.out.println("²»¼ÓÅ£ÄÌ£¬¸ø´óÀĞµİ¿§·È");
+//                System.out.println("ä¸åŠ ç‰›å¥¶ï¼Œç»™å¤§ä½¬é€’å’–å•¡");
 //                break;
 //            } else {
-//                System.out.println("ÊäÈë·Ç·¨");
+//                System.out.println("è¾“å…¥éæ³•");
 //                continue;
 //            }
 //
@@ -101,25 +101,25 @@
 //    }
 //}
 
-//½«´ú¹ººÍ³éÏóÀàÁ·Ï°Íê
+//å°†ä»£è´­å’ŒæŠ½è±¡ç±»ç»ƒä¹ å®Œ
 
-//¼òµ¥¹¤³§Éè¼ÆÄ£Ê½
+//ç®€å•å·¥å‚è®¾è®¡æ¨¡å¼
 //import java.util.Scanner;
-////²âÊÔÀà¼Ó¿Í»§¶Ë
+////æµ‹è¯•ç±»åŠ å®¢æˆ·ç«¯
 //class Client{
 //    public void buycom(Icomputer icomputer){
 //        icomputer.printcom();
 //    }
 //    public static void main(String[] args)throws Exception {
 //       Client client=new Client();
-//        System.out.println("Êä³öÄãÏëÒªµÄµçÄÔĞÍºÅ");
+//        System.out.println("è¾“å‡ºä½ æƒ³è¦çš„ç”µè„‘å‹å·");
 //       Scanner scanner=new Scanner(System.in);
 //       String str=scanner.nextLine();
 //       Icomputer icomputer=factory.getinstance(str);
 //       client.buycom(icomputer);
 //    }
 //}
-//½Ó¿Ú
+//æ¥å£
 //interface Icomputer{
 //   void printcom();
 //}
@@ -136,7 +136,7 @@
 //        }
 //        else{
 //            try {
-//                System.out.println("Ã»ÓĞÕÒµ½Ö¸¶¨ÉÌÆ·");
+//                System.out.println("æ²¡æœ‰æ‰¾åˆ°æŒ‡å®šå•†å“");
 //            }
 //            catch (Exception e){
 //                e.getStackTrace();
@@ -174,7 +174,7 @@
 //    public static void main(String[] args) {
 //        Client client=new Client();
 //
-//        System.out.println("ÇëÊäÈëÄúÏëÒªµÄµçÄÔÆ·ÅÆ");
+//        System.out.println("è¯·è¾“å…¥æ‚¨æƒ³è¦çš„ç”µè„‘å“ç‰Œ");
 //        Scanner scanner=new Scanner(System.in);
 //        String str=scanner.nextLine();
 //       Icomputer icomputer=factory.getinstance(str);
@@ -186,9 +186,9 @@
 //    void printcom();
 //
 //}
-////factory²»ÊÇ³éÏóµÄ£¬Ò²²»ĞèÒª¼Ì³Ğ½Ó¿Ú
+////factoryä¸æ˜¯æŠ½è±¡çš„ï¼Œä¹Ÿä¸éœ€è¦ç»§æ‰¿æ¥å£
 //class factory {
-////getinstance·½·¨ÒªÓÃ³éÏó·½·¨
+////getinstanceæ–¹æ³•è¦ç”¨æŠ½è±¡æ–¹æ³•
 //    public static Icomputer getinstance(String str){
 //        if(str.equals("acer")){
 //            return new acer();
@@ -200,7 +200,7 @@
 //            return new lenovo();
 //        }
 //        else{
-//            System.out.println("Ã»ÓĞÕÒµ½¸ÃÀàÉÌÆ·");
+//            System.out.println("æ²¡æœ‰æ‰¾åˆ°è¯¥ç±»å•†å“");
 //            return null;
 //        }
 //    }
@@ -238,46 +238,46 @@ class lianxi {
         System.out.println();
         System.out.print(b[3]);
         System.out.println();
-        //ÔÚÊä³öÀïÃæµ¥¶ÀĞ´Êı×éÃû³Æ£¬´òÓ¡µÄÊÇµØÖ·¡¤
+        //åœ¨è¾“å‡ºé‡Œé¢å•ç‹¬å†™æ•°ç»„åç§°ï¼Œæ‰“å°çš„æ˜¯åœ°å€Â·
         System.out.println(j);
-        //ÔÚjavaÔÚ´òÓ¡\0×Ö·ûµÄ½á¹ûÎª¿Õ
+        //åœ¨javaåœ¨æ‰“å°\0å­—ç¬¦çš„ç»“æœä¸ºç©º
         System.out.println("\0");
         System.out.println(j);
         System.out.println(c[2]);
 String str2="hello";
         System.out.println(str2.replace("l","x"));
-//ÓëÉÏÃæµÄĞŞ¸ÄÎŞ¹Ø£¬ÈÔÊÇ´òÓ¡hello
-        //ĞŞ¸ÄµÄ×Ö·û´®µÄÄÚÈİ£¬str.replace("ĞèÒªÌæ»»µÄÄÚÈİ""Ìæ»»³ÉÊ²Ã´")
-        //ÕıÔò±í´ïÊ½£¬½«×Ö·û´®ÀïµÄ×Ö·ûÈ«²¿Ä¬ÈÏ³É.,È»ºóÈ«²¿Ìæ»»ÎªÄ³¸ö×Ö·û
-//ÕıÔò±í´ïÊ½Ä¬ÈÏ½«Êı×éÀïÃæµÄÔªËØÄ¬ÈÏÎª.
+//ä¸ä¸Šé¢çš„ä¿®æ”¹æ— å…³ï¼Œä»æ˜¯æ‰“å°hello
+        //ä¿®æ”¹çš„å­—ç¬¦ä¸²çš„å†…å®¹ï¼Œstr.replace("éœ€è¦æ›¿æ¢çš„å†…å®¹""æ›¿æ¢æˆä»€ä¹ˆ")
+        //æ­£åˆ™è¡¨è¾¾å¼ï¼Œå°†å­—ç¬¦ä¸²é‡Œçš„å­—ç¬¦å…¨éƒ¨é»˜è®¤æˆ.,ç„¶åå…¨éƒ¨æ›¿æ¢ä¸ºæŸä¸ªå­—ç¬¦
+//æ­£åˆ™è¡¨è¾¾å¼é»˜è®¤å°†æ•°ç»„é‡Œé¢çš„å…ƒç´ é»˜è®¤ä¸º.
         System.out.println(str2.replaceAll(".","s"));
         System.out.println(str2.replaceFirst(".","s"));
-        //×Ö·û´®µÄ²ğ·Ö
+        //å­—ç¬¦ä¸²çš„æ‹†åˆ†
 //        String str3 = "hello world hello bit" ;
-//        String[] result = str3.split(" ") ; // °´ÕÕ¿Õ¸ñ²ğ·Ö
+//        String[] result = str3.split(" ") ; // æŒ‰ç…§ç©ºæ ¼æ‹†åˆ†
 //                 for(String s: result) {
 //                     System.out.println(s);
 //                 }
         String str3="lll ll l";
         //
-        //µ±Ë«ÒıºÅÄÚÊ²Ã´¶¼Ã»ÓĞµÄÊ±ºò±íÊ¾°´ÕÕ×Ö·ûÖ®¼äµÄ¿ÕÏ¶²ğ·Ö¡££¬Ò²¾ÍÊÇÖğ¸ö²ğ·Ö
+        //å½“åŒå¼•å·å†…ä»€ä¹ˆéƒ½æ²¡æœ‰çš„æ—¶å€™è¡¨ç¤ºæŒ‰ç…§å­—ç¬¦ä¹‹é—´çš„ç©ºéš™æ‹†åˆ†ã€‚ï¼Œä¹Ÿå°±æ˜¯é€ä¸ªæ‹†åˆ†
 //        String[] result=str3.split("");
 //        for(String xiugai:result){
 //            System.out.println(xiugai);
 //        }
         String[] result=str3.split("",3);
-        //splitµÄË«²ÎÊı²ğ·Ö£¬Ô­Ôò¼ûÒ»Æª²©¿Í£º
+        //splitçš„åŒå‚æ•°æ‹†åˆ†ï¼ŒåŸåˆ™è§ä¸€ç¯‡åšå®¢ï¼š
         //https://blog.csdn.net/pigdreams/article/details/70449891
         for(String xiugai:result){
             System.out.println(xiugai);
         }
-        //ÓÉÓÚ.±¾Éí¾ÍÓĞÌØÊâµÄº¬Òå£¬ËùÒÔÒª×ªÒÆ×Ö·û£¬·ñÔòÉÏÊö192.168.1.1²ğ·Ö³öÀ´Îª¿Õ
+        //ç”±äº.æœ¬èº«å°±æœ‰ç‰¹æ®Šçš„å«ä¹‰ï¼Œæ‰€ä»¥è¦è½¬ç§»å­—ç¬¦ï¼Œå¦åˆ™ä¸Šè¿°192.168.1.1æ‹†åˆ†å‡ºæ¥ä¸ºç©º
 String str4="192.168.1.1";
         String[]dd=str4.split("\\.");
         for(String s2:dd){
             System.out.println(s2);
         }
-//¶à´Î²ğ·Ö£¬ÔÚÒÔºó¿ª·¢ÖĞ¾­³£»áÓöµ½ÕâÖÖ¶à´Î²ğ·ÖµÄ×Ö·û´®
+//å¤šæ¬¡æ‹†åˆ†ï¼Œåœ¨ä»¥åå¼€å‘ä¸­ç»å¸¸ä¼šé‡åˆ°è¿™ç§å¤šæ¬¡æ‹†åˆ†çš„å­—ç¬¦ä¸²
        String str5="hhy:22|her:20";
        String result3[]=str5.split("\\|");
        for(int i=0;i<result3.length;i++){
@@ -287,10 +287,10 @@ String str4="192.168.1.1";
 
 String str6=" hehaoyuan ";
         System.out.println(str6);
-        //×Ö·û´®µÄ½ØÈ¡£¬´ÓµÚÁã¸ö¿ªÊ¼µ½×îºóÒ»¸ö×Ö·ûÖ®Ç°½áÊø£¬²»°üº¬×îºóÒ»¸ö×Ö·û
-        //Ò²¿ÉÒÔÀí½âÎª´Ó0¿ªÊ¼Ö»È¡6¸ö£¬ËãÉÏµÚ0¸ö£¬¼´È¡ÍêµÚÎå¸öÔªËØ
+        //å­—ç¬¦ä¸²çš„æˆªå–ï¼Œä»ç¬¬é›¶ä¸ªå¼€å§‹åˆ°æœ€åä¸€ä¸ªå­—ç¬¦ä¹‹å‰ç»“æŸï¼Œä¸åŒ…å«æœ€åä¸€ä¸ªå­—ç¬¦
+        //ä¹Ÿå¯ä»¥ç†è§£ä¸ºä»0å¼€å§‹åªå–6ä¸ªï¼Œç®—ä¸Šç¬¬0ä¸ªï¼Œå³å–å®Œç¬¬äº”ä¸ªå…ƒç´ 
         System.out.println(str6.substring(0,6));
-        //´Ó3¿ªÊ¼È¡ÍêËùÓĞÔªËØ
+        //ä»3å¼€å§‹å–å®Œæ‰€æœ‰å…ƒç´ 
         System.out.println(str6.substring(3));
         System.out.println(str6.trim());
 //char []b={}
@@ -304,10 +304,10 @@ String a5=str7.toString();
         System.out.println(new String(g1));
         System.out.println(new String(g1,2,1));
         String string="gjhghg";
-        //½«×Ö·û´®·µ»ØÎªcharÊı×é
+        //å°†å­—ç¬¦ä¸²è¿”å›ä¸ºcharæ•°ç»„
       //  char [] stringArr = string.toCharArray();
 
-        //Èç¹ûÒª·µ»ØbyteÊı×é¾ÍÖ±½ÓÊ¹ÓÃgetBytes·½·¨
+        //å¦‚æœè¦è¿”å›byteæ•°ç»„å°±ç›´æ¥ä½¿ç”¨getBytesæ–¹æ³•
       byte[]stringArr=string.getBytes();
       for(int n=0;n<stringArr.length;n++){
           System.out.println(stringArr[n]);
