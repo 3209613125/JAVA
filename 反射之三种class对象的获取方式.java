@@ -25,7 +25,7 @@ class Test3{
 
 
 
-******
+------------------------------------------
 package www.bit.tech;
 
 public class Fanshe1 {
