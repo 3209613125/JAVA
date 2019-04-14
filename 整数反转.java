@@ -6,10 +6,10 @@ class Test {
         System.out.println("请输入:");
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
-        find(i);
+        function(i);
 
     }
-    public static int find(int i) {
+    public static int function(int i) {
         int[] data = new int[1000];
         for (int k = 0; k < data.length; k++) {
             if(i>0){
