@@ -20,3 +20,13 @@ class Test3 {
 
     }
 }
+
+
+---------------------------------------------------------------------
+    
+    
+    class www.bit.tech.Fanshe1
+class www.bit.tech.Fanshe1
+class www.bit.tech.Fanshe1
+true
+true
