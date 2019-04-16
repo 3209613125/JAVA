@@ -18,3 +18,6 @@ class  Person{
     static Object object=123;
     public Person(){};
 }
+
+
+总结:integer也是Object的子类，其对象可以用Object的toString方法，将integer类型转化为String类型，但是int则不行
