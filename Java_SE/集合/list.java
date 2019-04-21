@@ -86,3 +86,50 @@ PHP
 
 
 
+**********************************************************************************
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+
+ class TestDemo {
+
+     public static void main(String[] args) {
+
+         // 此时集合里面只保存String类型
+      List<String> list = new ArrayList<>() ;
+      list.add("Hello") ;
+      // 重复数据
+         list.add("Hello") ;
+         list.add("Bit") ;
+         System.out.println(list) ;
+         Iterator iterator1=list.iterator();
+         while(iterator1.hasNext()){
+             System.out.println(iterator1.next());
+         }
+
+         System.out.println("*****");
+         for(String i:list){
+             System.out.println(i);
+         }
+
+
+
+         System.out.println("*****");
+         list.remove(2);
+         System.out.println(list);
+          }
+ }
+
+
+-------------------------------------------------------------------------------------
+    
+结果:
+
+Hello
+Hello
+Bit
+*****
+[Hello, Hello]
+
