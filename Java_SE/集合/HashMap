@@ -1,0 +1,32 @@
+import java.util.*;
+class Test{
+    public static void main(String[] args) {
+        Map<String,Integer> map=new HashMap();
+        //第一个元素只能是key，第二个只能是value
+        map.put("Mac",10000);
+        map.put("联想",6000);
+        map.put("宏碁",5000);
+        map.put("宏碁",5000);
+        System.out.println(map);
+        //只能输入key来获取value，反之不能（输出为null）
+        System.out.println(map.get("联想"));
+        //获取map中的key信息，先将Map集合转变为Set集合，自调用Set集合的iterator方法创造iterator，
+        //然后在利用iterator调用hasNext（）和next（）方法
+        Set<String> set = map.keySet() ;
+        Iterator<String> iterator = set.iterator() ;
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next()) ;
+        }
+
+    }
+}
+
+
+
+***
+结果：
+{联想=6000, 宏碁=5000, Mac=10000}
+6000
+联想
+宏碁
+Mac
