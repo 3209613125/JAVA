@@ -1,0 +1,30 @@
+java字节流与字符流
+产生原因，file类不支持文件内容的处理，如果要处理文件的内容，则需要使用流的操作模式来完成，流分为输入流和输出流
+在java.io包中，流分为两种，字节流和字符流
+1. 字节流：InputStream、OutputStream
+ 2.字符流：Reader、Writer
+二者区别，字节流是原生操作，而字符流是经过处理后的操作
+在进行网络数据传输、磁盘数据保存所保存所支持的数据类型只有：字节。
+而所有磁盘中的数据必须先读取到内存后才能进行操作，而内存中会帮助我们把字节变为字符。字符更加适合处理中文。
+不管是字节流还是字符流二者的处理过程都几乎一样
+1. 根据文件路径创建File类对象 ；
+ 2. 根据字节流或字符流的子类实例化父类对象 ；
+ 3. 进行数据的读取或写入操作
+ 4. 关闭流(close())。
+
+
+字节输出流(OutputStream)
+ 如果要想通过程序进行内容输出，则可以使用java.io.OutputStream。 来观察OutputStream类的定义结构：
+OutputStream类实现了Closeable，Flushable两个接口，这两个接口中的方法：
+ 1. Closeable: public void close() throws IOException;
+ 2. Flushable: public void ?ush() throws IOException;
+ 在OutputStream类中还定义有其他方法：
+ 1. 将给定的字节数组内容全部输出：public void write(byte b[]) throws IOException
+ 2. 将部分字节数组内容输出：public void write(byte b[], int o?, int len) throws IOException
+ 3. 输出单个字节：public abstract void write(int b) throws IOException;
+public abstract class OutputStream implements Closeable, Flushable
+由于OutputStream是一个抽象类，所以要想为父类实例化，就必须要使用子类。由于方法名称都由父类声明好了，
+ 所以我们在此处只需要关注子类的构造方法。如果要进行文件的操作，可以使用FileOutputStream类来处理，
+ 这个类的构造方法如下：
+1. 接收File类（覆盖）：public FileOutputStream(File ?le) throws FileNotFoundException
+ 2. 接收File类（追加）：public FileOutputStream(File ?le, boolean append)
