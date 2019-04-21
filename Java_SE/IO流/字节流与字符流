@@ -28,3 +28,8 @@ public abstract class OutputStream implements Closeable, Flushable
  这个类的构造方法如下：
 1. 接收File类（覆盖）：public FileOutputStream(File ?le) throws FileNotFoundException
  2. 接收File类（追加）：public FileOutputStream(File ?le, boolean append)
+
+
+ AutoCloseable自动关闭支持
+从JDk1.7开始追加了一个AutoCloseable接口，这个接口的主要目的是自动进行关闭处理，
+ 但是这种处理一般不好用，因为使用它必须结合try..catch
