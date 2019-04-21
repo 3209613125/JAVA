@@ -11,3 +11,24 @@ Set接口与List接口最大的不同在于Set接口中的内容是不允许重�
  同时需要注意的是，Set接口并没有对 Collection接口进行扩充，
  而List对Collection进行了扩充。因此，在Set接口中没有get()方法。
  在Set子接口中有两个常用子类：HashSet(无序存储)、TreeSet(有序存储)
+
+
+
+
+Set接口与List接口最大的不同在于Set接口中的内容是不允许重复的。同时需要注意的是，
+ Set接口并没有对 Collection接口进行扩充，而List对Collection进行了扩充。
+ 因此，在Set接口中没有get()方法。 在Set子接口中有两个常用子类：HashSet(无序存储)、TreeSet(有序存储)
+
+
+如果要想标识出对象的唯一性，一定需要equals()与hashCode()方法共同调用。
+ 面试题：如果两个对象的hashCode()相同，equals()不同结果是什么？不能消除
+面试题：如果两个对象的hashCode()不同，equals()相同结果是什么？不能消除
+ 对象判断必须两个方法equals()、hashCode()返回值都相同才判断为相同。
+个人建议：
+1. 保存自定义对象的时候使用List接口； 2. 保存系统类信息的时候使用Set接口(避免重复)。
+
+
+总结：HashSet和TreeSet类都继承Set接口，他们不能用来存放相同同元素（当元素为字符串，整型等等），他们也可以
+用来存放对象，但是当他们用来存放对象的时候，当对象相同的时候默认不会消除，这个时候，如果是HashSet，
+则通过覆写hashcode（）和equals（）方法来消除相同元素，如果是TreeSet，由于其本身实现了comparable接口，
+会有compareTo方法（insert+Alt生成），则也可以消除相同的元素，否则默认不会识别相同的对象
