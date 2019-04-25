@@ -1,15 +1,3 @@
-class MyRunnable3 implements Runnable {
-
-    private int tick = 10;
-
-    @Override
-    public void run() {
-        while (this.tick > 0) {
-            System.out.println("剩余：" + --this.tick + " 票");
-        }
-    }
-}
-
 class MyThread extends Thread {
 
     private String title;
