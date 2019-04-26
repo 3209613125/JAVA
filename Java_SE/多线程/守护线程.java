@@ -5,7 +5,8 @@ public class TestDaemon {
         Thread threadA = new Thread(new MyDaemonRunnable(), "Thread-A");
         //创建线程默认就是用户线程
         //设置线程为守护线程需要调用setDaemon(true),必须在start之前调用
-//        threadA.setDaemon(true);
+        System.out.println("主线程开始");
+        threadA.setDaemon(true);
         threadA.start();
         
         Thread threadB = new Thread(new MyDaemonRunnable(), "Thread-B");
