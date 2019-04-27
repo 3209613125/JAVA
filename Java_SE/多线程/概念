@@ -1,3 +1,9 @@
+/**
+ * Author: secondriver
+ * Created: 2019/4/22
+ */
+package com.bittech;
+
 /*
 线程的创建：
 
@@ -91,5 +97,14 @@
 8.2 synchronized加在方法上表示同步方法
     synchronized(锁对象)加在代码块上表示同步代码块
 
+8.3 synchronized
+    加载成员方法上，对方法所属的对象加锁
+    加载静态方法上，对方法所属的类的类对象加锁
+    
+    synchronized(对象)
+    对象：
+    this 表示当前对象
+    Type object= new Type() ( new Object) 表示普通对象
+    ClassType.class ( String.class)  表示类对象
 
 */
