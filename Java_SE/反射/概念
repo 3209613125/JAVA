@@ -19,7 +19,7 @@ Class:
 
 public T newInstance()
 
-无参构造public,不能是私有否则报错，只能调用无参构造，由public提供
+无参构造public,不能是私有否则报错，只能调用无参构造， 由public提供
 
 
 
@@ -27,7 +27,7 @@ Construction:
 public T newInstance(Object...initargs)
 
 getConstruction，只能调用public，Construction类提供
-getdeclaredConstruction,可以调用所有权限，Construction类提供
+getdeclaredConstruction,可以调用所有权限，Construction的类提供
 
 
 
