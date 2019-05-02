@@ -4,7 +4,7 @@
  ，但是后面再进行数据保存的时候发现数组个数不够了 会进行数组动态扩充。
  所以在实际开发之中，使用ArrayList最好的做法就是设置初始化大小。
  2. LinkedList：是一个纯粹的链表实现，与之前编写的链表程序实现基本一样（人家性能高）。
- 总结：ArrayList封装的是数组；LinkedList封装的是链表。ArrayList时间复杂度为1，而LinkedList的复杂度为 n。
+ 总结：ArrayList封装的是数组；LinkedList封装的是链表。ArrayList时间复杂度为1，而LinkedList的复杂度是 n。
 
 
 Set接口与List接口最大的不同在于Set接口中的内容是不允许重复的。
