@@ -1,4 +1,4 @@
-//通过数组交换数值
+//通过数组交换来数值
 class Test {
 
     public static void swap(int[] d) {
