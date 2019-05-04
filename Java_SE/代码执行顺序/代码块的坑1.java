@@ -1,4 +1,4 @@
-//一道阿里校招题
+//一道阿里题
 class HelloA {
 
        public HelloA(){
