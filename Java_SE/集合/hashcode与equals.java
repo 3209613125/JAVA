@@ -21,7 +21,8 @@ class People{
 
     @Override
     public int hashCode() {
-        // TODO Auto-generated method stub
+        //一般在设计哈希算法时，会选择一个特殊的质数。至于为啥选择质数，
+        //我想应该是可以降低哈希算法的冲突率。31,37,41,43
         return name.hashCode()*37+age;
     }
 
