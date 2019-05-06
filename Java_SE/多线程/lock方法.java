@@ -11,6 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 class TestLockThread {
 
  public static void main(String[] args) {
+  //lock锁不能随便被修改，所以要加上final来修饰
   final Lock lock  = new ReentrantLock();
   Runnable runnable = new MyLockRunnable(lock);
   new Thread(runnable, "黄牛A").start();
