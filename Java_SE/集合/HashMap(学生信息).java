@@ -25,7 +25,7 @@ class HashMapDemon{
 
             }
         }
-        System.out.println("学生的信息为:");
+        System.out.println("学生信息为:");
         for(int i=0;i<list.size();i++){
             HashMap<Integer,Student>map=list.get(i);
             Student student=map.get(i+1);
