@@ -10,7 +10,7 @@ public static void main(String args[]){
 
 String d="m.runoob.com";
 
-char result = s.charAt(8);
+char result = d.charAt(8);
 
 System.out.println(result);
 }
