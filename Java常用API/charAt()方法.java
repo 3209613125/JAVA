@@ -2,7 +2,7 @@
 
 //public char charAt(int index)
 
-//返回值：返回指定索引处的字符
+//返回值：返回指定索引处字符
 
 public class Test{
 
