@@ -43,3 +43,24 @@ public class test {
 50
 50
 0
+
+
+import java.util.*;
+import java.math.BigInteger;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        while (input.hasNext()) {
+            String s1 = input.next();
+            String s2 = input.next();
+            BigInteger bigInteger = new BigInteger(s1);
+            BigInteger bigInteger1 = new BigInteger(s2);
+            BigInteger[] arr = bigInteger.divideAndRemainder(bigInteger1);
+            for (BigInteger i : arr) {
+                System.out.println(i);
+            }
+
+        }
+    }
+}
+
