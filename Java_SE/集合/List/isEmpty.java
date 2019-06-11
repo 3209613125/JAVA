@@ -23,8 +23,3 @@ System.out.println(list2.isEmpty()); 
 System.out.println(list1 == null); 
 
 两者就都为true了
---------------------- 
-作者：yinni11 
-来源：CSDN 
-原文：https://blog.csdn.net/yinni11/article/details/79887842 
-版权声明：本文为博主原创文章，转载请附上博文链接！
