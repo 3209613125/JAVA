@@ -23,3 +23,28 @@ System.out.println(list2.isEmpty()); 
 System.out.println(list1 == null); 
 
 两者就都为true了
+
+
+if(null == list || list.size() ==0 ){
+}
+
+
+list.isEmpty()和list.size()==0 没有区别
+
+isEmpty()判断有没有元素
+而size()返回有几个元素
+如果判断一个集合有无元素 
+建议用isEmpty()方法.这清晰,简明
+
+list!=null跟!list.isEmpty()有什么区别?
+这就相当与，你要喝水，
+前面就是判断是不是连水杯都没有，
+后面就是判断水杯里面没有水，
+连盛水的东西都没有，
+这个水从何而来？
+所以一般的判断是
+if(list!=null && !list.isEmpty()){
+这个里面取list中的值
+}else{
+做其他处理
+}
