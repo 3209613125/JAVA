@@ -1,5 +1,5 @@
 public class test1{
-    public static void main1(String[] args) {
+    public static void main(String[] args) {
         String a = "123";
         String b = "123";
         System.out.println(a==b);
@@ -14,7 +14,7 @@ public class test1{
 
 
 class test2{
-    public static void main2(String[] args) {
+    public static void main(String[] args) {
         String a = "123";
         String b = new String("123");
         System.out.println(a==b);
@@ -22,8 +22,8 @@ class test2{
     }
 }
 
-  从运行结果我们可以看到这是两个不同的字符创对象
+  从运行结果我们可以看到这是两个不同的字符串对象
 
-  那是因为 常量池中本身存在"123" 这个字符创对象    在 执行new String("123" ) 时  只是将常量池中的"123"复制到 堆中 
+  那是因为 常量池中本身存在"123" 这个字符串对象    在 执行new String("123" ) 时  只是将常量池中的"123"复制到 堆中 
 
-然后对象的引用 交给b  这其实就是两个字符串对象  一个字 常量池 一个在 堆中  所以运行结果为false
+然后对象的引用 交给b  这其实就是两个字符串对象  一个在 常量池 一个在 堆中  所以运行结果为false
