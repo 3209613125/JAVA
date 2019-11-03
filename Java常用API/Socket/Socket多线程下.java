@@ -1,3 +1,10 @@
+//如何在dos命令下启动
+//javac -encoding UTF-8 Solution.java
+//java Solution
+//注意事项：！！！将包注释掉：
+//否则在Dos命令下会报错：
+//错误：找不到或无法加载主类 原因: java.lang.ClassNotFoundException 的方法
+
 class send extends Thread{
     @Override
     public void run() {
