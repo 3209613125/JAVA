@@ -6,7 +6,7 @@
     </mirror>
 
 
-pom.xml
+//pom.xml
 
 <repositories>
     <repository>
@@ -21,4 +21,4 @@ pom.xml
         </snapshots>
     </repository>
 </repositories>
-7
+
